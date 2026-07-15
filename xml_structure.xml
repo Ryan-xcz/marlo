@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventManagementReport 
+    xmlns:xsi="[w3.org](http://www.w3.org/2001/XMLSchema-instance)"
+    generatedAt=""
+    systemName="Smart Event Management System"
+    version="1.0">
+
+    <!-- ============================================ -->
+    <!-- REPORT METADATA                              -->
+    <!-- ============================================ -->
+    <ReportMetadata>
+        <GeneratedBy></GeneratedBy>
+        <Role></Role>
+        <Department></Department>
+        <ReportPeriod>
+            <StartDate></StartDate>
+            <EndDate></EndDate>
+        </ReportPeriod>
+        <Timezone></Timezone>
+    </ReportMetadata>
+
+    <!-- ============================================ -->
+    <!-- SUMMARY STATISTICS                           -->
+    <!-- ============================================ -->
+    <Summary>
+        <TotalEvents></TotalEvents>
+        <TotalRegistrations></TotalRegistrations>
+        <TotalSpeakers></TotalSpeakers>
+        <PendingApprovals></PendingApprovals>
+        <ApprovedRegistrations></ApprovedRegistrations>
+        <RejectedRegistrations></RejectedRegistrations>
+    </Summary>
+
+    <!-- ============================================ -->
+    <!-- EVENTS                                       -->
+    <!-- ============================================ -->
+    <Events>
+        <!-- Repeats for each event in database -->
+        <Event id="" status="">
+            <Title></Title>
+            <ShortCode></ShortCode>
+            <Type></Type>
+            <Description></Description>
+            <Venue>
+                <Name></Name>
+                <Address></Address>
+                <City></City>
+                <Coordinates>
+                    <Latitude></Latitude>
+                    <Longitude></Longitude>
+                </Coordinates>
+            </Venue>
+            <Schedule>
+                <StartDate></StartDate>
+                <EndDate></EndDate>
+                <StartTime></StartTime>
+                <EndTime></EndTime>
+                <Duration></Duration>
+            </Schedule>
+            <Capacity>
+                <MaxSeats></MaxSeats>
+                <Registered></Registered>
+                <Attended></Attended>
+                <Available></Available>
+            </Capacity>
+            <Organizer>
+                <Name></Name>
+                <Email></Email>
+                <Contact></Contact>
+            </Organizer>
+            <Attachments>
+                <Attachment id="">
+                    <FileName></FileName>
+                    <FileType></FileType>
+                    <FileSize></FileSize>
+                    <UploadedAt></UploadedAt>
+                </Attachment>
+            </Attachments>
+            <CreatedAt></CreatedAt>
+            <UpdatedAt></UpdatedAt>
+        </Event>
+    </Events>
+
+    <!-- ============================================ -->
+    <!-- REGISTRATIONS                                -->
+    <!-- ============================================ -->
+    <Registrations>
+        <!-- Repeats for each registration -->
+        <Registration id="" eventId="">
+            <Attendee>
+                <FullName></FullName>
+                <StudentID></StudentID>
+                <Course></Course>
+                <YearLevel></YearLevel>
+                <Email></Email>
+                <ContactNumber></ContactNumber>
+            </Attendee>
+            <Status></Status>
+            <RegisteredAt></RegisteredAt>
+            <ApprovedAt></ApprovedAt>
+            <ApprovedBy></ApprovedBy>
+            <AttendanceStatus></AttendanceStatus>
+            <CheckInTime></CheckInTime>
+        </Registration>
+    </Registrations>
+
+    <!-- ============================================ -->
+    <!-- SPEAKERS                                     -->
+    <!-- ============================================ -->
+    <Speakers>
+        <!-- Repeats for each speaker -->
+        <Speaker id="" eventId="">
+            <Name></Name>
+            <Title></Title>
+            <Organization></Organization>
+            <Bio></Bio>
+            <Email></Email>
+            <Photo></Photo>
+            <SessionTopic></SessionTopic>
+            <SessionTime></SessionTime>
+        </Speaker>
+    </Speakers>
+
+    <!-- ============================================ -->
+    <!-- AUDIT LOG                                    -->
+    <!-- ============================================ -->
+    <AuditLog>
+        <Entry timestamp="">
+            <Action></Action>
+            <User></User>
+            <Details></Details>
+            <IPAddress></IPAddress>
+        </Entry>
+    </AuditLog>
+
+</EventManagementReport>
